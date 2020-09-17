@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# zsh-plugins
+Useful zsh functions and plugins. For a best experience, use with oh-my-zsh (https://github.com/ohmyzsh/ohmyzsh)
 
-You can use the [editor on GitHub](https://github.com/purplecure/zsh-plugins/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Installation
+From a Linux shell prompt:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+$ mkdir -p ~/.profile.d
+$ git clone https://github.com/purplecure/zsh-plugins.git
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Now you need to edit your .zshrc to load the plugins. You load the individually with:
 
-### Jekyll Themes
+```bash
+...
+# Load functions.plugin.zsh
+source ~/profile.d/zsh-plugins/functions.plugin.zsh
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/purplecure/zsh-plugins/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+or with a simple loop like this:
 
-### Support or Contact
+```bash
+# Load all zsh plugins from disk
+for item in $(ls -1 ${HOME}/.profile.d/zsh-plugins/*.plugin.zsh); do
+        [ -e "${item}" ] && source "${item}"
+done
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Reload or restart your session and you are done!
