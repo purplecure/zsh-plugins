@@ -1,6 +1,6 @@
 # zsh-plugins
 Useful zsh functions and plugins. For a best experience, use with oh-my-zsh 
-[Go here for more fun]: https://github.com/ohmyzsh/ohmyzsh
+[Go here for more fun](https://github.com/ohmyzsh/ohmyzsh)
 
 ## Installation
 
