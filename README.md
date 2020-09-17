@@ -4,7 +4,7 @@ Useful zsh functions and plugins. For a best experience, use with oh-my-zsh (htt
 ## Installation
 From a Linux shell prompt:
 
-```shell
+```bash
 $ mkdir -p ~/.profile.d
 $ git clone https://github.com/purplecure/zsh-plugins.git
 ```
