@@ -1,10 +1,11 @@
-# Custom plugin for zsh
+# Custom plugin for zsh shell
 #
 # Docker functions
 #
 # Author: Marco Ghillani <marco.ghillani@mac.com>
 # Date:   Wed Sep 16 23:54:33 CET 2020
 #
+
 
 ### Docker enhancement functions ###
 do-upg() {

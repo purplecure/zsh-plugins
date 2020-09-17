@@ -1,4 +1,4 @@
-# Custom plugin for zsh
+# Custom plugin for zsh shell
 #
 # Nerdims functions
 #
